@@ -120,10 +120,3 @@ a:focus {
     font-size: 12px !important;
     margin-left: 8px;
 }
-@media (max-width: 576px) {
-  /* estilos para celular */
-    .body-cv{
-        width: 100%;
-        padding: 16px 16px;
-    }
-} 
