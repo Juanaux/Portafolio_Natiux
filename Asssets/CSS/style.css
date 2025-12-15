@@ -10,12 +10,25 @@ body{
 h3{
     margin-bottom: 50px !important;
 }
+a {
+    color: #d09d08;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+body a {
+    color: #d09d08;
+}
+
+a:hover,
+a:focus {
+    color: #a87f05;
+    text-decoration: underline;
+}
+
 .nav-item{
     font-size: 18px;
 }
-nav-item:hover{
-    color: #d09d08;
-}
+
 .bi{
     color: #d09d08;
     font-size: 24px;
@@ -33,7 +46,24 @@ nav-item:hover{
     justify-content: center;
     padding-left:50px;
     color:#D2C9C6;
+    position: relative;
+    min-height: 60vh;
 }
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* controla contraste aquí */
+    z-index: 0;
+    }
+
+.banner h1,
+.banner p {
+    position: relative;
+    z-index: 1;
+    }
+
 .img-fluid{
     margin-bottom: 20px;
 }
@@ -78,3 +108,22 @@ nav-item:hover{
     text-align: center;
     margin-top: 50px;
 }
+.body-cv{
+    width: 50%;
+}
+.resumen{
+    display: flex;
+    flex-direction: row;
+    gap:24px;
+}
+.iconocopy{
+    font-size: 12px !important;
+    margin-left: 8px;
+}
+@media (max-width: 576px) {
+  /* estilos para celular */
+    .body-cv{
+        width: 100%;
+        padding: 16px 16px;
+    }
+} 
